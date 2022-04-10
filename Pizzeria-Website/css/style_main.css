@@ -1,0 +1,169 @@
+ /*Styl strony głównej*/
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*Cia�o strony*/
+	body {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+		margin: 0px;
+		background-color: #faf1eb;
+	}
+	/*Elementy h1 w body*/
+	body h1 {
+		font-weight: 300;
+		margin: 17px 30px;
+		display: inline-block;
+	}
+	/*G��wny nag��wek strony*/
+	#main-header {
+		font-family: 'Anton', sans-serif;
+		border-bottom: 2px solid  #c3722e;
+		border-top: 1px solid  #c3722e;
+		text-shadow: 2px 3px 8px #000;
+		background-color:  #c3722e;
+		color: white;
+	}
+
+	/*Linki w main-header*/
+	#main-header a {
+		text-decoration-line: none;
+		color: white;
+		text-align: center;
+	}
+	/*Klasa odpowiadaj�ca za elementy w main-header*/
+	.navigation li{
+		list-style: none;
+		float: right;
+	  padding: 0px 40px;
+		}
+
+	/*Dekoracja po najechaniu na elementy klasy navigation myszk�*/
+	.navigation :hover{
+		text-decoration: underline;
+	}
+	/*Wysuwane podmenu po najechaniu na element navigation*/
+	.submenu{
+		padding: 0px;
+		border-top: none;
+		width: 200px;
+		background-color:  #c3722e;
+		position: absolute;
+		display: none;
+
+	}
+
+	/*Wygl�d link�w w submenu*/
+	.submenu a {
+		text-decoration-line: none;
+		color: white;
+		font-size: 25px;
+		text-shadow: 2px 3px 8px #000;
+	}
+
+	/*Elementy listy w submenu, ustalenie szeroko�ci, potrzebne do efektu najechania myszk�*/
+	.submenu li{
+		width: 120px;
+		text-align: center;
+	}
+	/*Efekt po najechaniu myszk� na pojedy�czy element w submenu*/
+	.submenu li:hover{
+		background-color: #512602;
+		text-decoration: none;
+	}
+	/*Zmiana klasy po najechaniu myszk� na jeden z element�w w navigation (jQuery)*/
+	.submenu.active{
+			display: block;
+	}
+
+	/*Pasek do wpisywania*/
+	.my-input{
+		display: block;
+		width: 15%;
+		margin: 15px;
+		padding: 10px 20px;
+		border-radius: 10px;
+		border: 1px solid grey;
+	}
+
+	/*Efekt po aktywowaniu paska*/
+	.my-input:focus{
+		outline: none;
+		border:1px solid black;
+	}
+
+	/*Sekcja elementów w prostok�tnych obszarach*/
+	#about-us{
+		width: 1200px;
+		margin: auto;
+		margin-top: 50px;
+	}
+	/*Pojedy�czy artyku� w about-us*/
+	#about-us article{
+		width: 333px;
+		display: inline-block;
+		border: 1px solid black;
+		padding: 10px;
+		margin: 10px;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+
+	}
+	/*Efekt po najechaniu myszk� na artyku� z about-us*/
+	#about-us article:hover{
+		box-shadow: 5px 5px 20px rgba(0, 0, 0, .7);
+		transition:box-shadow 0.5s;
+	}
+
+
+	/*Obrazek w artykule z about-us*/
+	.article-image{
+		height: 200px;
+		width: 100%;
+		background-size: cover !important;
+		background-position: center !important;
+	}
+
+	/*Logo na szczycie strony*/
+	.logo-image{
+		background-position: left top !important;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 20px;
+		vertical-align: middle;
+	}
+
+/*Pogrubienie tekstu*/
+	.bold{
+		font-weight: bold;
+	}
+
+	/*Sekcja opinii klientów*/
+	.opinions{
+		width: 1200px;
+		margin: auto;
+		margin-top: 10px;
+	}
+
+	/*Pojedy�czy artyku� w opinions*/
+	.opinions article{
+		border-top: 1px solid;
+		display: none;
+		opacity: 0;
+		transition: opacity 6s;
+	}
+  /*Odsłonięcie opinii po wywołjaniu funkcji w JS*/
+	.unhide{
+		display: block !important;
+	}
+
+	/*Dół strony*/
+	footer{
+		margin-top: 70px;
+		background-color: #c3722e;
+		padding-left: 160px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}

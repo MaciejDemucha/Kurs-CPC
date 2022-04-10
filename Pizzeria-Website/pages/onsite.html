@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Zamówienie na miejscu-->
+<html>
+
+	<head>
+		<!--Tytuł strony-->
+		<title>Zamówienie</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Maciej Demucha">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<!--Styl i logo karty w przeglądarce-->
+		<link rel="stylesheet" href="../css/style_delivery.css" />
+		<link rel="shortcut icon" type="image/png" href="../picture/pizza.jpg"/>
+
+	</head>
+	<!--Ciało strony-->
+  <!--Główny nagłówek strony-->
+  <header id="main-header">
+    <!--Logo na szczycie strony-->
+    <div class="logo-image" style="background:url(../picture/pizza.jpg)"></div>
+    <h1>
+      <!--Tytuł strony w nagłówku głównym-->
+      <a href="../index.html"> Witaj w Pizza Delicious!</a>
+      <!--Linki do menu i zamówienia-->
+      <div class="navigation">
+        <nav>
+          <ul>
+
+          <li>
+              <a href="#" class="navigation-trigger" data-trigger="dropdown">Zamów</a>
+
+              <!--Wysuwana lista po najechaniu myszką-->
+              <ul class="submenu">
+                <li><a href="../pages/delivery.html">Dowóz</a></li>
+                <li><a href="../pages/onsite.html">Na miejscu</a></li>
+              </ul>
+
+            </li>
+
+            <li>
+
+              <a href="../pages/menu.html" class="navigation-trigger" data-trigger="dropdown">Menu</a>
+
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </h1>
+  </header>
+	<body>
+		<!--Obszar główny strony służący do zamawiania-->
+		<section id="menu">
+		<form method="POST" action="result.html">
+
+			<p>
+			<h2>Złóż zamówienie</h2>
+						<h4>Adres</h4>
+						<input name="ulica" id="ulica" placeholder="Ulica i nr" class="sm-input" /><br />
+						<input name="miasto" id="miasto" placeholder="Miasto" class="sm-input" /><br />
+						<input name="pocztowy" id="pocztowy" placeholder="Kod pocztowy" class="sm-input" /><br />
+				</p>
+
+  <p>
+    <label>
+      Wybierz pizzę:
+      <select name="pizza" id="pizza">
+        <option>1. MARGARITA</option>
+        <option>2. SALAMI</option>
+        <option>3. CAPRICOSSA</option>
+        <option>4. VERONA</option>
+        <option>5. PIZZA CHŁOPSKA</option>
+			  <option>6. DIABLO</option>
+      </select>
+    </label>
+  </p>
+
+	<p hidden>
+		<!--Ukryte pole przekazujące dane o rodzaju zamówienia-->
+		<input name="zamow" id="zamow" type="radio" value="Na miejscu" checked="checked" /> Dostawa<br />
+	</p>
+
+  <p>
+    <button type="submit" onclick="handleSubmit()">Zamów</button>
+  </p>
+</form>
+</section>
+
+<!--Dół strony, dane kontaktowe-->
+<footer>
+
+  <h2>Dane kontaktowe:</h2>
+  <ul>
+    <li>Ulica: Starowiejska 5</li>
+    <li>Miasto: 61-664 Poznań</li>
+    <li>Telefon: 511-86-86-88</li>
+    <li>Email: pizzadelicious@gmail.com</li>
+  </ul>
+
+</footer>
+  <!--Dodanie jQuery i skrypty-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Wysuwane menu-->
+  <script src="../js/main.js"></script>
+	<!--Pobranie danych z zamówienia-->
+	<script type="text/javascript" src="../js/submit.js"></script>
+  </body>
+
+</html>

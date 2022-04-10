@@ -1,0 +1,23 @@
+﻿@model List<string>
+
+
+@{ ViewData["Title"] = "Modele"; }
+
+<html>
+<head>
+    <title>Modele</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Nagłówek listy-->
+    <h2>Lista producentów</h2>
+    <!--Wyświetlenie listy producentów-->
+    <ul>
+        @foreach (var model in Model)
+        {
+<li>@Html.ActionLink(model, "GetPhoneByModel", "Home", new { model = model }, null)</li>}
+    </ul>
+
+</body>
+</html>

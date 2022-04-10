@@ -1,0 +1,25 @@
+﻿@model List<MaciejDemuchaLab4.Models.PhoneViewModel>
+
+@{ ViewData["Title"] = "Wszystkie telefony"; }
+<html>
+<head>
+    <title>Wszystkie telefony</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <!--Pętla po wszystkich telefonach-->
+    @foreach (var Phone in Model)
+    {
+        <div>
+            <h2>@Phone.Manufacturer</h2>
+            <h4>Model: @Phone.Model</h4>
+            <h4>Cena: @Phone.Price zł</h4>
+            <h4>Rozmiar: @Phone.Size cala</h4>
+            <img src="@Url.Content(Phone.Photo)" alt="@Phone.Model" />
+            <hr />
+        </div>}
+
+</body>
+</html>

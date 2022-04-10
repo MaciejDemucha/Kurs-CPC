@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--Podsumowanie zamówienia-->
+<html>
+
+	<head>
+		<!--Tytuł strony-->
+		<title>Podsumowanie</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Maciej Demucha">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<!--Styl i logo karty w przeglądarce-->
+		<link rel="stylesheet" href="../css/style_result.css" />
+		<link rel="shortcut icon" type="image/png" href="../picture/pizza.jpg"/>
+
+	</head>
+	<!--Ciało strony-->
+  <!--Główny nagłówek strony-->
+  <header id="main-header">
+    <!--Logo na szczycie strony-->
+    <div class="logo-image" style="background:url(../picture/pizza.jpg)"></div>
+    <h1>
+      <!--Tytuł strony w nagłówku głównym-->
+      <a href="../index.html"> Witaj w Pizza Delicious!</a>
+    </h1>
+  </header>
+	<body>
+		<div id="menu">
+		<h1>
+            Złożyłeś zamówienie:
+    </h1>
+        <h2>
+            Ulica: <span id="result-street" />
+        </h2>
+        <h2>
+          Miasto: <span id="result-city" />
+        </h2>
+				<h2>
+          Kod pocztowy: <span id="result-postal" />
+        </h2>
+				<h2>
+          Wybrana pizza: <span id="result-pizza" />
+        </h2>
+				<h2>
+          Rodzaj zamówienia: <span id="result-order" />
+        </h2>
+
+				<center>
+					<!--Przycisk powrotu do strony głównej-->
+						<button type="submit" id="go-button">Potwierdź zamówienie</button>
+						<div id="notification"></div>
+
+						</div>
+				</center>
+
+			</div>
+
+<!--Dół strony, dane kontaktowe-->
+<footer>
+
+  <h2>Dane kontaktowe:</h2>
+  <ul>
+    <li>Ulica: Starowiejska 5</li>
+    <li>Miasto: 61-664 Warszawa</li>
+    <li>Telefon: 511-86-86-88</li>
+    <li>Email: pizzadelicious@gmail.com</li>
+  </ul>
+
+</footer>
+  <!--Dodanie jQuery i skrypty-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Wysuwane menu-->
+  <script src="../js/main.js"></script>
+	<!--Przekazanie danych z zamówienia i funkcja powrotu po 5 s od naciśnięcia przycisku-->
+	<script type="text/javascript" src="../js/result.js"></script>
+  </body>
+
+</html>

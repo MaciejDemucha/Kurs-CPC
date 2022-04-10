@@ -1,0 +1,144 @@
+<!--Testowane w Firefox i Chrome-->
+
+<!DOCTYPE html>
+<!--Strona główna-->
+<html>
+
+	<head>
+		<!--Tytuł strony-->
+		<title> Pizzeria Pizza Delicious, z dowozem i na wynos!</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Maciej Demucha">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<!--Styl i logo karty w przeglądarce-->
+		<link rel="stylesheet" href="css/style_main.css" />
+		<link rel="shortcut icon" type="image/png" href="picture/pizza.jpg"/>
+
+	</head>
+	<!--Ciało strony, wywołanie funkcji odsłonięcia opinii-->
+	<body onload="unhideOpinions()">
+		<!--Główny nagłówek strony-->
+		<header id="main-header">
+			<!--Logo na szczycie strony-->
+			<div class="logo-image" style="background:url(./picture/pizza.jpg)"></div>
+			<h1>
+				<!--Tytuł strony w nagłówku głównym-->
+				<a href="index.html"> Witaj w Pizza Delicious!</a>
+				<!--Elementy zawierające różne tematy artykułów-->
+				<div class="navigation">
+					<nav>
+						<ul>
+
+						<li>
+								<a href="#" class="navigation-trigger" data-trigger="dropdown">Zamów</a>
+
+								<!--Wysuwana lista po najechaniu myszką-->
+								<ul class="submenu">
+									<li><a href="pages/delivery.html">Dowóz</a></li>
+									<li><a href="pages/onsite.html">Na miejscu</a></li>
+								</ul>
+
+							</li>
+
+							<li>
+
+								<a href="pages/menu.html" class="navigation-trigger" data-trigger="dropdown">Menu</a>
+
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</h1>
+		</header>
+
+		<!--Artykuły z obrazkami-->
+		<section id="about-us">
+			<article>
+				<div class="article-image" style="background:url(./picture/staff.jpg)"></div>
+				<h3>Pracuj u nas!</h3>
+				<p>
+					Jeżeli jesteś zainteresowany pracą w zgranym zespole i fascynuje cię gotowanie,
+					przyjdź do nas ze swoim CV :)
+				</p>
+			</article>
+
+			<article>
+				<div class="article-image" style="background:url(./picture/pizza-body.jpg)"></div>
+				<h3>Nasza oferta</h3>
+				<p>
+					Oferujemy przeróżne rodzaje pizzy więc z pewnością znajdziesz coś dla siebie.
+					Co więcej, nasze dania są przyrządzane z najlepszej jakości produktów!
+				</p>
+			</article>
+
+			<article>
+				<div class="article-image" style="background:url(./picture/people.jpg)"></div>
+				<h3>Nasz lokal</h3>
+				<p>
+					Nasza pizzeria jest doskonałym miejscem na przeróżne spotkania towarzyskie.
+					</br>Przyjdź i sam zobacz!
+				</p>
+			</article>
+
+		</section>
+		<!--Opinie klientów-->
+		<section class="opinions">
+			<div class="bold">
+				</br>
+				</br>
+				</br>
+			<h1><p>Poznaj opinie naszych klientów:</p></h1>
+				</br>
+				</br>
+			</div>
+
+      <div id="opinions-list">
+		<div id="opinion1" class="">
+			<article>
+				<h3>Marek</h3>
+				<p>
+					Jak zwykle szybko i przepysznie!
+				</p>
+			</article>
+		</div>
+
+			<div id="opinion2" class="">
+			<article>
+				<h3>Elżbieta</h3>
+				<p>
+					Pizza ciepła, bogata liczba składników, dowiezione relatywnie szybko. Jesteście najlepsi.
+				</p>
+			</article>
+		</div>
+
+			<div id="opinion3" class="">
+			<article>
+				<h3>Piotr</h3>
+				<p>
+					Bardzo dobra pizza. Pyszne ciasto, dużo składników i smaczny czosnkowy sos.
+					Choć pizza jest tak dobra że nie potrzeba sosu. Polecam i pozdrawiam
+				</p>
+			</article>
+		</div>
+		</div>
+
+		</section>
+		<!--Dół strony, dane kontaktowe-->
+		<footer>
+
+			<h2>Dane kontaktowe:</h2>
+			<ul>
+				<li>Ulica: Starowiejska 5</li>
+				<li>Miasto: 61-664 Poznań</li>
+				<li>Telefon: 511-86-86-88</li>
+				<li>Email: pizzadelicious@gmail.com</li>
+			</ul>
+
+		</footer>
+		<!--Dodanie jQuery i skrypty-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

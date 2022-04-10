@@ -1,0 +1,27 @@
+﻿@model MaciejDemuchaLab4.Models.PhoneViewModel
+
+@{ ViewData["Title"] = @Model.Model; }
+
+
+<html>
+<head>
+    <title>Producenci</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <br />
+    <div>
+      
+        <h2>Producent: @Model.Manufacturer</h2>
+      
+        <h4>Model: @Model.Model</h4>
+       
+        <h4>Cena: @Model.Price</h4>
+
+        <h4>Rozmiar: @Model.Size cala</h4>
+       
+        <img src=@Url.Content(Model.Photo) alt=@Model.Model>
+    </div>
+</body>
+</html>

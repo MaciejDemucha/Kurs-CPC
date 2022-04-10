@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Kup telefon";
+}
+
+<div class="jumbotron">
+    <h1>Kup telefon</h1>
+
+    <ul>
+        <li>
+            @Html.ActionLink("Wyszukaj po cenie", "SetPrice", "Home")
+        </li>
+
+        <li>
+            @Html.ActionLink("Wszystkie telefony", "GetAllPhones", "Home")
+        </li>
+
+        <li>
+            @Html.ActionLink("Producenci", "GetSetOfManufacturers", "Home")
+        </li>
+
+        <li>
+            @Html.ActionLink("Modele", "GetListOfModels", "Home")
+        </li>
+
+        <li>
+            @Html.ActionLink("Kontakt", "ContactForm", "Home")
+        </li>
+    </ul>
+</div>

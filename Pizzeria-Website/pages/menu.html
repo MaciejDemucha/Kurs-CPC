@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--Menu-->
+<html>
+
+	<head>
+		<!--Tytuł strony-->
+		<title>Menu</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Maciej Demucha">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<!--Styl i logo karty w przeglądarce-->
+		<link rel="stylesheet" href="../css/style_menu.css" />
+		<link rel="shortcut icon" type="image/png" href="../picture/pizza.jpg"/>
+
+	</head>
+	<!--Ciało strony-->
+  <!--Główny nagłówek strony-->
+  <header id="main-header">
+    <!--Logo na szczycie strony-->
+    <div class="logo-image" style="background:url(../picture/pizza.jpg)"></div>
+    <h1>
+      <!--Tytuł strony w nagłówku głównym-->
+      <a href="../index.html"> Witaj w Pizza Delicious!</a>
+      <!--Linki do menu i zamówienia-->
+      <div class="navigation">
+        <nav>
+          <ul>
+
+          <li>
+              <a href="#" class="navigation-trigger" data-trigger="dropdown">Zamów</a>
+
+              <!--Wysuwana lista po najechaniu myszką-->
+              <ul class="submenu">
+                <li><a href="../pages/delivery.html">Dowóz</a></li>
+                <li><a href="../pages/onsite.html">Na miejscu</a></li>
+              </ul>
+
+            </li>
+
+            <li>
+
+              <a href="../pages/menu.html" class="navigation-trigger" data-trigger="dropdown">Menu</a>
+
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </h1>
+  </header>
+	<body>
+		<!--Obszar główny strony zawierający tabelę z menu-->
+    <section id="menu">
+    <table border = "5 px" width = "100%">
+
+    <thead>
+
+      <tr>
+        <th width = "100">Nazwa</th>
+        <th width = "400">Składniki</th>
+        <th width = "50">Cena</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>1. MARGARITA</td>
+        <td>sos pomidorowy, ser, przyprawy</td>
+        <td>19</td>
+
+      </tr>
+        <td>2. SALAMI</td>
+        <td>salami, sos pomidorowy, ser, przyprawy</td>
+        <td>21</td>
+      <tr>
+
+      </tr>
+        <td>3. CAPRICOSSA</td>
+        <td>szynka, pieczarki, sos pomidorowy, ser, przyprawy</td>
+        <td>21</td>
+      <tr>
+
+      </tr>
+        <td>4. VERONA</td>
+        <td>kurczak, ananas, kukurydza, sos pomidorowy, ser, przyprawy</td>
+        <td>22</td>
+      <tr>
+
+      </tr>
+        <td>5. PIZZA CHŁOPSKA</td>
+        <td>kiełbasa, salami, cebula, papryka, czosnek, sos pomidorowy, ser</td>
+        <td>23</td>
+      <tr>
+
+			</tr>
+				<td>6. DIABLO</td>
+				<td>szynka, salami, boczek, papryka, czosnek, cebula, papryka pepperoni, sos pomidorowy, ser, przyprawy</td>
+				<td>23</td>
+			<tr>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+  </section>
+<!--Dół strony, dane kontaktowe-->
+<footer>
+
+  <h2>Dane kontaktowe:</h2>
+  <ul>
+    <li>Ulica: Starowiejska 5</li>
+    <li>Miasto: 61-664 Poznań</li>
+    <li>Telefon: 511-86-86-88</li>
+    <li>Email: pizzadelicious@gmail.com</li>
+  </ul>
+
+</footer>
+  <!--Dodanie jQuery i skrypty-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Wysuwane menu-->
+  <script src="../js/main.js"></script>
+  </body>
+
+</html>
